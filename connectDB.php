@@ -81,7 +81,7 @@
         mysqli_query($conn, $insertTable);
         echo "<h1>Rows Added</h1>";
 
-        $displayTable = "SELECT * FROM $dbName";
+        $displayTable = "SELECT * FROM json_details";
         $results = mysqli_query($conn, $displayTable);
         if ($results->num_rows > 0) {
             while($row = $results->fetch_assoc()) {
